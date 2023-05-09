@@ -15,6 +15,8 @@ public class ShootAction : BaseAction
         CoolOff,
     }
 
+    public Sprite ShootPhoto;
+
     public static event EventHandler<OnShootEventArgs> OnAnyShoot;
     public event EventHandler<OnShootEventArgs> OnShoot;
 
@@ -165,6 +167,12 @@ public class ShootAction : BaseAction
     }
 
     public override string GetActionName() { return "Shoot"; }
+
+    public override Sprite GetActionPhoto()
+    {
+        return ShootPhoto;
+    }
+
     public override int GetActionPointsCost() { return 1; }
 
     public override EnemyAIAction GetEnemyAIAction(GridPosition gridPosition)

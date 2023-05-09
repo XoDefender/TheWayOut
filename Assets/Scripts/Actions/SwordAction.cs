@@ -13,6 +13,8 @@ public class SwordAction : BaseAction
 
     public static event EventHandler OnAnySwordHit;
 
+    public Sprite SwordPhoto;
+
     public event EventHandler OnSwordActionStarted;
     public event EventHandler OnSwordActionCompleted;
 
@@ -68,6 +70,11 @@ public class SwordAction : BaseAction
     public override string GetActionName()
     {
         return "Sword";
+    }
+
+    public override Sprite GetActionPhoto()
+    {
+        return SwordPhoto;
     }
 
     public override EnemyAIAction GetEnemyAIAction(GridPosition gridPosition)

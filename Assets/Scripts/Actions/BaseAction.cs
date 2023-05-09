@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public abstract class BaseAction : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public abstract class BaseAction : MonoBehaviour
     }
 
     public abstract string GetActionName();
+    public abstract Sprite GetActionPhoto();
 
     public abstract void TakeAction(GridPosition gridPosition, Action OnCompleteAction);
 

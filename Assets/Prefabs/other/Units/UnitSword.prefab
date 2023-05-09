@@ -553,6 +553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitAnimator: {fileID: 6876733597774986679}
   maxMoveDistance: 4
+  MovePhoto: {fileID: 21300000, guid: 48a868862ffb73c4ebae2015705cc8fc, type: 3}
 --- !u!114 &7368461450484176984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7019150558cb9a14e8ce5432f722a40f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpinPhoto: {fileID: 21300000, guid: 7c09d4b9b9ead5f40889154074686417, type: 3}
 --- !u!114 &2959463019463671852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14645dba772eef1418374cf9fbb419be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SwordPhoto: {fileID: 21300000, guid: 52b87ad0499712d4691b4082d814d082, type: 3}
 --- !u!114 &7520662492549171154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a153cc9465acccc42bfddca196c4eda1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractPhoto: {fileID: 21300000, guid: 0909def4f59cb874888e025e863a2a53, type: 3}
 --- !u!114 &6077680702089193856
 MonoBehaviour:
   m_ObjectHideFlags: 0

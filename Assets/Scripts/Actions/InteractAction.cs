@@ -7,10 +7,18 @@ public class InteractAction : BaseAction
 {
     private int maxInteractDistance = 1;
 
+    public Sprite InteractPhoto;
+
     public override string GetActionName()
     {
         return "Interact";
     }
+
+    public override Sprite GetActionPhoto()
+    {
+        return InteractPhoto;
+    }
+
 
     public override EnemyAIAction GetEnemyAIAction(GridPosition gridPosition)
     {

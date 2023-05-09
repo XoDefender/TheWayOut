@@ -11,6 +11,8 @@ public class MoveAction : BaseAction
     public event EventHandler OnStartMoving;
     public event EventHandler OnStopMoving;
 
+    public Sprite MovePhoto;
+
     private List<Vector3> positions;
     private int currentPositionIndex;
 
@@ -114,6 +116,11 @@ public class MoveAction : BaseAction
     }
 
     public override string GetActionName() { return "Move"; }
+
+    public override Sprite GetActionPhoto()
+    {
+        return MovePhoto;
+    }
 
     public override int GetActionPointsCost() { return 1; }
 }

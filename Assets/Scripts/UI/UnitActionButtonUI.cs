@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class UnitActionButtonUI : MonoBehaviour
@@ -22,7 +23,8 @@ public class UnitActionButtonUI : MonoBehaviour
     {
         this.baseAction = baseAction;
 
-        textMeshPro.text = baseAction.GetActionName().ToUpper();
+        //textMeshPro.text = baseAction.GetActionName().ToUpper();
+        this.button.image.sprite=baseAction.GetActionPhoto();
 
         button.onClick.AddListener(() =>
         {

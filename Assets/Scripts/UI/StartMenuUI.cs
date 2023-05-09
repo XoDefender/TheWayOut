@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class StartMenuUI : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class StartMenuUI : MonoBehaviour
     [SerializeField] private Button SettingsButton;
     [SerializeField] private Button SelectLevelButton;
 
-    private void Awake()
+    void Awake()
     {
         PlayButton.onClick.AddListener(PlayButton_OnClick);
         QuitButton.onClick.AddListener(QuitButton_OnClick);
@@ -21,7 +22,7 @@ public class StartMenuUI : MonoBehaviour
 
     private void PlayButton_OnClick()
     {
-        Loader.Load(Loader.Scene.Main);
+        SceneManager.LoadScene(2);
     }
 
     private void QuitButton_OnClick()
@@ -36,6 +37,6 @@ public class StartMenuUI : MonoBehaviour
 
     private void SelectLevelButton_OnClick()
     {
-
+        SceneManager.LoadScene(1);
     }
 }

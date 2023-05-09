@@ -2,10 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GrenadeAction : BaseAction
 {
     [SerializeField] private Transform GrenadeProjectilePref;
+    
+    public Sprite GrenadePhoto;
 
     private enum State
     {
@@ -96,6 +99,11 @@ public class GrenadeAction : BaseAction
     public override string GetActionName()
     {
         return "Grenade";
+    }
+    
+    public override Sprite GetActionPhoto()
+    {
+        return GrenadePhoto;
     }
 
     public override EnemyAIAction GetEnemyAIAction(GridPosition gridPosition)

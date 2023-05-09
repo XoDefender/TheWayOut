@@ -7,6 +7,8 @@ public class SpinAction : BaseAction
 {
     private float totalSpinAmount;
 
+    public Sprite SpinPhoto;
+
     void Update()
     {
         if (!isActive) return;
@@ -44,6 +46,11 @@ public class SpinAction : BaseAction
     }
 
     public override string GetActionName() { return "Spin"; }
+
+    public override Sprite GetActionPhoto()
+    {
+        return SpinPhoto;
+    }
 
     public override int GetActionPointsCost() { return 2; }
 }
