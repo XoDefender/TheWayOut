@@ -20,7 +20,7 @@ public class ButtonsFunctions : MonoBehaviour
     public void NextLevel()
     {
         //Debug.Log(SceneManager.GetActiveScene().buildIndex);
-        if (SceneManager.GetActiveScene().buildIndex - 1 <= LevelCount)
+        if (SceneManager.GetActiveScene().buildIndex - 1 < LevelCount)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         else
             SceneManager.LoadScene(0);
