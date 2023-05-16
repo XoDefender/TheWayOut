@@ -25,6 +25,7 @@ public class EndGameUI : MonoBehaviour
 
     private void UnitManager_OnAllEnemiesDead(object sender, EventArgs e)
     {
+        Debug.Log(1111);
         StartCoroutine(SetWinGameUI());
     }
 

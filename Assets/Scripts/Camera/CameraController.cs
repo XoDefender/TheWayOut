@@ -71,6 +71,7 @@ public class CameraController : MonoBehaviour
     private void HandleZooming()
     {
         float zoomAmount = 1f;
+        
 
         if (Input.mouseScrollDelta.y > 0)
         {

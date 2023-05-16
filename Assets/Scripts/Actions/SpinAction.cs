@@ -52,5 +52,5 @@ public class SpinAction : BaseAction
         return SpinPhoto;
     }
 
-    public override int GetActionPointsCost() { return 2; }
+    public override int GetActionPointsCost() { return 1; }
 }

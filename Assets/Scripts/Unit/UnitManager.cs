@@ -55,6 +55,7 @@ public class UnitManager : MonoBehaviour
         if (unit.IsEnemy)
         {
             enemyUnits.Remove(unit);
+            //Debug.Log(enemyUnits.Count);
             if (enemyUnits.Count == 0)
                 OnAllEnemiesDead?.Invoke(this, EventArgs.Empty);
         }

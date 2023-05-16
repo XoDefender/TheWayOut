@@ -11,6 +11,7 @@ public class StartMenuUI : MonoBehaviour
     [SerializeField] private Button QuitButton;
     [SerializeField] private Button SettingsButton;
     [SerializeField] private Button SelectLevelButton;
+    [SerializeField] private Button trainingBtn;
 
     void Awake()
     {
@@ -18,6 +19,7 @@ public class StartMenuUI : MonoBehaviour
         QuitButton.onClick.AddListener(QuitButton_OnClick);
         SettingsButton.onClick.AddListener(SettingsButton_OnClick);
         SelectLevelButton.onClick.AddListener(SelectLevelButton_OnClick);
+        trainingBtn.onClick.AddListener(trainingBtn_OnClick);
     }
 
     private void PlayButton_OnClick()
@@ -38,5 +40,9 @@ public class StartMenuUI : MonoBehaviour
     private void SelectLevelButton_OnClick()
     {
         SceneManager.LoadScene(1);
+    }
+    private void trainingBtn_OnClick()
+    {
+        SceneManager.LoadScene(4);
     }
 }
