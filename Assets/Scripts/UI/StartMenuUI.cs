@@ -43,6 +43,6 @@ public class StartMenuUI : MonoBehaviour
     }
     private void trainingBtn_OnClick()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 }

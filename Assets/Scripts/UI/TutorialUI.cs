@@ -317,6 +317,7 @@ public class TutorialUI : MonoBehaviour
 
     private void UnitActionSystem_OnBusyActionChanged(object sender, bool isBusy)
     {
+        //qq();
         if (isBusy && t13)//take
             t14=true;
         else
@@ -338,5 +339,10 @@ public class TutorialUI : MonoBehaviour
         {
             t9=true;
         }
+    }
+
+    private IEnumerator qq()
+    {
+        yield return new WaitForSeconds(3);
     }
 }

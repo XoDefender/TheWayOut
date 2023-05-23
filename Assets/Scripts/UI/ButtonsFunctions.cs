@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonsFunctions : MonoBehaviour
 {
-    private int LevelCount = 2;
+    private int LevelCount = 3;
     public void ReastartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

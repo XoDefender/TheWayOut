@@ -9,12 +9,14 @@ public class SelectLevelUI : MonoBehaviour
 {
     [SerializeField] private Button FirstLevelButton;
     [SerializeField] private Button SecondLevelButton;
+    [SerializeField] private Button ThirdLevelButton;
     [SerializeField] private Button BackToMenuButton;
 
     void Awake()
     {
         FirstLevelButton.onClick.AddListener(FirstLevelButton_OnClick);
         SecondLevelButton.onClick.AddListener(SecondLevelButton_OnClick);
+        ThirdLevelButton.onClick.AddListener(ThirdLevelButton_OnClick);
         BackToMenuButton.onClick.AddListener(BackToMenuButton_OnClick);
     }
 
@@ -25,6 +27,10 @@ public class SelectLevelUI : MonoBehaviour
     private void SecondLevelButton_OnClick()
     {
         SceneManager.LoadScene(3);
+    }
+    private void ThirdLevelButton_OnClick()
+    {
+        SceneManager.LoadScene(4);
     }
     private void BackToMenuButton_OnClick()
     {
