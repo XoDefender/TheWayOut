@@ -41,7 +41,7 @@ public class TurnSystemUI : MonoBehaviour
 
     private void UpdateTurnText()
     {
-        turnNumber.text = $"TURN {TurnSystem.Instance.TurnNumber}";
+        turnNumber.text = $"’Ó‰: {TurnSystem.Instance.TurnNumber}";
     }
 
     private void UpdateEnemyTurnVisual()

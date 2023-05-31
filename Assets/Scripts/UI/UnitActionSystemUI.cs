@@ -85,7 +85,7 @@ public class UnitActionSystemUI : MonoBehaviour
     private void UpdateActionPoints()
     {
         Unit selectedUnit = UnitActionSystem.Instance.SelectedUnit;
-        actionPoints.text = $"Action points: {selectedUnit.ActionPoints}";
+        actionPoints.text = $"Кол-во действий: {selectedUnit.ActionPoints}";
     }
 
     private void UnitActionSystem_OnActionStarted(object sender, EventArgs e)
