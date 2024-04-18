@@ -13,8 +13,7 @@ public class UnitActionSystem : MonoBehaviour
     private Unit selectedUnit;
     private BaseAction selectedAction;
     private bool isBusy;
-
-    // private string defaultSelectedUnitName = "UnitRifle";
+    private string defaultSelectedUnitName = "Unit";
 
     public event EventHandler OnSelectUnitChanged;
     public event EventHandler OnSelectActionChanged;
@@ -33,11 +32,11 @@ public class UnitActionSystem : MonoBehaviour
         Instance = this;
     }
 
-    /*private void Start()
+    private void Start()
     {
         Unit unit = GameObject.Find(defaultSelectedUnitName).GetComponent<Unit>();
         SetSelectedUnit(unit);
-    }*/
+    }
 
     private void Update()
     {
